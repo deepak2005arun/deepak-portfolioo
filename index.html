@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Portfolio of Deepak Arun P — Mechatronics and Automation Engineering student focused on mechanical design, prototyping, system integration and control engineering.">
+<title>Deepak Arun P | Mechatronics & Automation</title>
+<style>
+:root{--bg:#0b0e13;--panel:#121821;--panel2:#171f2a;--text:#edf2f7;--muted:#9ba9b8;--line:#273342;--accent:#65d6c4;--accent2:#86a9ff;--max:1120px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.65}
+a{color:inherit;text-decoration:none}.wrap{width:min(var(--max),calc(100% - 44px));margin:auto}
+header{position:sticky;top:0;z-index:20;background:rgba(11,14,19,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+nav{height:72px;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:800;letter-spacing:.04em}.brand span{color:var(--accent)}
+.navlinks{display:flex;gap:25px;color:var(--muted);font-size:.9rem}.navlinks a:hover{color:var(--accent)}
+.menu{display:none;background:none;border:1px solid var(--line);color:var(--text);padding:8px 12px;border-radius:8px}
+.hero{padding:104px 0 88px;position:relative;overflow:hidden}.hero:after{content:"";position:absolute;width:480px;height:480px;border-radius:50%;right:-120px;top:-120px;background:radial-gradient(circle,rgba(101,214,196,.13),transparent 68%);pointer-events:none}
+.eyebrow{color:var(--accent);font-size:.78rem;text-transform:uppercase;letter-spacing:.18em;font-weight:750}
+h1{font-size:clamp(2.8rem,7vw,5.8rem);line-height:1.02;letter-spacing:-.06em;margin:18px 0 22px;max-width:850px}
+h1 em{font-style:normal;color:var(--accent)}.lead{font-size:1.13rem;color:var(--muted);max-width:720px}
+.actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:30px}.btn{padding:12px 18px;border-radius:8px;border:1px solid var(--line);font-weight:700;font-size:.9rem}.btn.primary{background:var(--accent);color:#071311;border-color:var(--accent)}.btn:hover{transform:translateY(-2px);transition:.2s}
+.quick{display:flex;gap:34px;flex-wrap:wrap;margin-top:54px;color:var(--muted);font-size:.88rem}.quick strong{display:block;color:var(--text);font-size:1.05rem}
+section{padding:76px 0;border-top:1px solid var(--line)}.section-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:30px}.section-head h2{font-size:2rem;letter-spacing:-.04em;margin:5px 0}.section-head p{color:var(--muted);max-width:470px;margin:0}
+.about-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:28px}.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:25px}.card p{color:var(--muted);margin:8px 0}.focus-list{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px}.focus{padding:13px;background:var(--panel2);border-radius:9px;color:#dce6ef;font-size:.9rem}
+.skill-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.skill h3{margin:0 0 10px;font-size:1rem}.tags{display:flex;flex-wrap:wrap;gap:8px}.tag{font-size:.82rem;color:#c9d5df;background:#202b38;border:1px solid #2d3b4b;border-radius:6px;padding:6px 9px}
+.projects{display:grid;grid-template-columns:repeat(2,1fr);gap:17px}.project{display:flex;flex-direction:column;min-height:260px}.project .type{color:var(--accent);font-size:.75rem;text-transform:uppercase;letter-spacing:.12em;font-weight:750}.project h3{font-size:1.22rem;line-height:1.3;margin:10px 0}.project p{font-size:.92rem;color:var(--muted);margin:0 0 15px}.project .tags{margin-top:auto}
+.timeline{display:grid;grid-template-columns:180px 1fr;gap:20px;padding:22px 0;border-bottom:1px solid var(--line)}.timeline:last-child{border:0}.date{color:var(--accent);font-size:.86rem;font-weight:700}.timeline h3{margin:0 0 5px}.timeline p{color:var(--muted);margin:0}
+.edu{display:grid;grid-template-columns:1fr 1fr;gap:15px}.edu .card h3{margin:0 0 5px}.edu .card p{margin:0}
+.contact{display:flex;justify-content:space-between;gap:24px;align-items:center;flex-wrap:wrap}.contact h2{font-size:2.2rem;margin:6px 0}.contact p{color:var(--muted)}
+footer{padding:26px 0;color:var(--muted);font-size:.82rem;border-top:1px solid var(--line)}
+@media(max-width:760px){.navlinks{display:none;position:absolute;top:72px;left:0;right:0;padding:18px 22px;background:var(--panel);flex-direction:column;border-bottom:1px solid var(--line)}.navlinks.open{display:flex}.menu{display:block}.hero{padding:76px 0 65px}.about-grid,.skill-grid,.projects,.edu{grid-template-columns:1fr}.section-head{display:block}.section-head p{margin-top:8px}.timeline{grid-template-columns:1fr;gap:5px}.quick{gap:20px}.wrap{width:min(var(--max),calc(100% - 32px))}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><nav>
+<a class="brand" href="#home">DEEPAK<span>.</span></a>
+<div class="navlinks" id="navlinks"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#contact">Contact</a></div>
+<button class="menu" onclick="document.getElementById('navlinks').classList.toggle('open')">Menu</button>
+</nav></div></header>
+<main>
+<div class="wrap hero" id="home">
+<div class="eyebrow">Mechatronics & Automation Engineering</div>
+<h1>Deepak Arun <em>P.</em></h1>
+<p class="lead">I design, build and integrate mechanical and electromechanical systems — combining CAD, prototyping, embedded hardware and control engineering to turn ideas into working systems.</p>
+<div class="actions"><a class="btn primary" href="#projects">Explore my work ↘</a><a class="btn" href="mailto:deepak2005arun@gmail.com">Get in touch</a><a class="btn" href="Deepak_Arun_CV.pdf" download>Download CV ↓</a></div>
+<div class="quick"><div><strong>CAD → Prototype</strong>Mechanical design & fabrication</div><div><strong>Sense → Actuate</strong>Embedded systems integration</div><div><strong>Model → Control</strong>Dynamics, simulation & PID</div></div>
+</div>
+
+<section id="about"><div class="wrap">
+<div class="section-head"><div><div class="eyebrow">01 / Profile</div><h2>Engineering through integration.</h2></div><p>A hands-on approach spanning mechanical design, electronics, automation and system-level problem solving.</p></div>
+<div class="about-grid">
+<div class="card"><p>I'm a final-year Mechatronics Engineering student at Vellore Institute of Technology, with a strong foundation in mechanical design, electrical systems and control engineering. My experience includes CAD modelling, structural analysis, motor control, MATLAB/Simulink and industrial automation, supported by practical exposure to automotive manufacturing and multidisciplinary system integration.</p><p>I'm particularly interested in roles where engineering drawings, physical prototyping, wiring, sensors, actuators and control systems come together.</p></div>
+<div class="card"><h3>Areas I enjoy working in</h3><div class="focus-list"><div class="focus">Mechanical system design</div><div class="focus">3D printing & prototyping</div><div class="focus">Wiring & system integration</div><div class="focus">System dynamics & kinematics</div><div class="focus">Control engineering</div><div class="focus">Embedded interfacing</div></div></div>
+</div></div></section>
+
+<section id="skills"><div class="wrap">
+<div class="section-head"><div><div class="eyebrow">02 / Technical toolkit</div><h2>Skills built for the workshop and the workbench.</h2></div><p>Emphasis on the practical capabilities relevant to mechanical and mechatronics system development.</p></div>
+<div class="skill-grid">
+<div class="card skill"><h3>01. Engineering Design</h3><div class="tags"><span class="tag">Fusion 360</span><span class="tag">SolidWorks</span><span class="tag">AutoCAD</span><span class="tag">3D CAD Modelling</span><span class="tag">Engineering Drawings</span><span class="tag">Assembly Modelling</span></div></div>
+<div class="card skill"><h3>02. Prototyping & Fabrication</h3><div class="tags"><span class="tag">3D Printing</span><span class="tag">Prototype Development</span><span class="tag">Mechanical Assembly</span><span class="tag">Fabrication</span><span class="tag">Design Iteration</span></div></div>
+<div class="card skill"><h3>03. Electrical Integration</h3><div class="tags"><span class="tag">Soldering & Wiring</span><span class="tag">DC Motors</span><span class="tag">Sensors</span><span class="tag">Actuators</span><span class="tag">Motor Drivers</span><span class="tag">LTSpice</span></div></div>
+<div class="card skill"><h3>04. Dynamics & Control</h3><div class="tags"><span class="tag">System Dynamics</span><span class="tag">Kinematics</span><span class="tag">PID Control</span><span class="tag">Control Engineering</span><span class="tag">MATLAB/Simulink</span><span class="tag">LabVIEW</span></div></div>
+<div class="card skill"><h3>05. Simulation & Analysis</h3><div class="tags"><span class="tag">ANSYS</span><span class="tag">FEA</span><span class="tag">Structural Analysis</span><span class="tag">LMS Amesim</span><span class="tag">Weld Strength Assessment</span></div></div>
+<div class="card skill"><h3>06. Automation & Embedded</h3><div class="tags"><span class="tag">Arduino</span><span class="tag">ESP32</span><span class="tag">Sensor/Actuator Interfacing</span><span class="tag">PLC</span><span class="tag">Ladder Logic</span><span class="tag">HMI</span><span class="tag">Python</span><span class="tag">Java</span></div></div>
+</div>
+<p style="color:var(--muted);font-size:.83rem;margin-top:16px">Additional tools of interest for system modelling: Julia and OpenModelica.</p>
+</div></section>
+
+<section id="projects"><div class="wrap">
+<div class="section-head"><div><div class="eyebrow">03 / Selected work</div><h2>Projects & engineering applications.</h2></div><p>From CAD and structural validation to embedded control, fabrication and system-level modelling.</p></div>
+<div class="projects">
+<article class="card project"><div class="type">Mechanical design · Rover systems</div><h3>NASA Human Exploration Rover Challenge (HERC)</h3><p>Led rover subsystem CAD design, assembly modelling and FEA-based structural validation. Designed and optimised wheels for road and off-road operation, contributed to electrical power management and control, and coordinated mechanical, electrical and software integration. The rover achieved the team's fastest on-track performance during competition testing.</p><div class="tags"><span class="tag">CAD</span><span class="tag">FEA</span><span class="tag">Wheels</span><span class="tag">Integration</span></div></article>
+<article class="card project"><div class="type">Welding · Mechanical testing</div><h3>Weld Strength Estimation & Comparative Analysis</h3><p>Comparative study of Arc Welding and MIG Welding, assessing welded-joint properties including tensile strength, hardness and bendability. The work focuses on estimating and comparing weld strength from mechanical test observations and understanding how the welding process influences joint performance.</p><div class="tags"><span class="tag">Arc Welding</span><span class="tag">MIG Welding</span><span class="tag">Tensile Strength</span><span class="tag">Hardness</span><span class="tag">Bend Test</span></div></article>
+<article class="card project"><div class="type">Control systems · Robotics</div><h3>Design, Assembly & PID Control of a Mini Robotic Arm</h3><p>Designed and assembled a 2-DOF planar robotic arm. Developed an Arduino-based LabVIEW HMI for DC motor speed and direction control with real-time IR sensor feedback. Modelled the arm in MATLAB/Simulink and Simscape Multibody, implementing inverse kinematics and independent PID joint controllers.</p><div class="tags"><span class="tag">Arduino</span><span class="tag">LabVIEW</span><span class="tag">PID</span><span class="tag">Kinematics</span><span class="tag">Simscape</span></div></article>
+<article class="card project"><div class="type">Embedded systems · IIoT</div><h3>IIoT-Enabled Industrial Hopper Monitoring System</h3><p>Developed an ESP32-CAM and ToF sensor-based monitoring system for material identification and fill-level measurement. Integrated image classification with Arduino IoT Cloud for visualisation and low-material-level alerts.</p><div class="tags"><span class="tag">ESP32-CAM</span><span class="tag">ToF Sensor</span><span class="tag">Arduino Cloud</span><span class="tag">Embedded</span></div></article>
+<article class="card project"><div class="type">Mechanical design · FEA</div><h3>Compact Torque-Limiting Ball Detent Coupler</h3><p>Designed a compact ball-detent torque-limiting coupler for mechanical overload protection and controlled disengagement in small-scale machinery. Used FEA to evaluate stress distribution, deformation and torque capacity.</p><div class="tags"><span class="tag">CAD</span><span class="tag">FEA</span><span class="tag">Mechanism Design</span></div></article>
+<article class="card project"><div class="type">System modelling · Hydraulics</div><h3>Hydraulic Regenerative Braking for Hybrid Heavy-Duty Vehicles</h3><p>Modelled a hydraulic regenerative braking system using MATLAB/Simulink and LMS Amesim. Integrated a hydraulic pump-motor and accumulator into a vehicle dynamics model to analyse speed response, pressure, flow characteristics and braking energy recovery.</p><div class="tags"><span class="tag">MATLAB/Simulink</span><span class="tag">LMS Amesim</span><span class="tag">Hydraulics</span></div></article>
+<article class="card project"><div class="type">Rover · Fabrication</div><h3>Caterpillar Rover Competition</h3><p>Contributed to mechanical design, structural analysis, fabrication and subsystem integration for an off-road rover.</p><div class="tags"><span class="tag">Mechanical Design</span><span class="tag">Fabrication</span><span class="tag">Integration</span></div></article>
+</div></div></section>
+
+<section id="experience"><div class="wrap">
+<div class="section-head"><div><div class="eyebrow">04 / Experience & education</div><h2>Learning in real engineering environments.</h2></div></div>
+<div class="timeline"><div class="date">Internship</div><div><h3>Hyundai Motor India Limited</h3><p>Performed FMEA for automated transmission assembly processes, identifying failure modes, evaluating Risk Priority Numbers and proposing corrective actions that reduced process risks by over 50%. Proposed PLC-based and mechanical poka-yoke improvements involving sensor integration, error detection logic and fixture modifications. Gained exposure to PLC-controlled machinery, ladder logic, sensors, actuators, interlocks and automation safety.</p></div></div>
+<div class="timeline"><div class="date">Internship</div><div><h3>Spark Minda — Sriperumbudur</h3><p>Worked in New Product Development, gaining exposure to automotive wiring harness design, prototype development, manufacturing processes, product validation, electrical quality checks and industry standards.</p></div></div>
+<div class="edu" style="margin-top:24px"><div class="card"><h3>Vellore Institute of Technology</h3><p>B.Tech — Mechatronics & Automation</p><p>2023–2027 · CGPA: 8.49</p></div><div class="card"><h3>Languages</h3><p>Tamil · English · Hindi</p></div></div>
+</div></section>
+
+<section id="contact"><div class="wrap contact"><div><div class="eyebrow">05 / Contact</div><h2>Let's build something that moves.</h2><p>Interested in mechanical design, prototyping, automation and control engineering opportunities.</p></div><div class="actions"><a class="btn primary" href="mailto:deepak2005arun@gmail.com">Email me</a><a class="btn" href="tel:+918438962680">Call</a></div></div></section>
+</main>
+<footer><div class="wrap">© 2026 Deepak Arun P. Built to showcase engineering, design and hands-on problem solving.</div></footer>
+<script>document.querySelectorAll('.navlinks a').forEach(a=>a.addEventListener('click',()=>document.getElementById('navlinks').classList.remove('open')));</script>
+</body></html>
